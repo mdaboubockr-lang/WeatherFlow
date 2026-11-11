@@ -16,5 +16,5 @@ export async function fetchWeather(city) {
         throw new Error("Something went wrong. Please try again later.");
     }
     const data = await response.json();
-    return data;
+    return await data;
 }
